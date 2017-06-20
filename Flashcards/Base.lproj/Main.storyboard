@@ -31,30 +31,23 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" text="Question Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ld5-aw-pL4">
-                                        <rect key="frame" x="0.0" y="20.5" width="343" height="215"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" editable="NO" text="Question Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ld5-aw-pL4">
+                                        <rect key="frame" x="0.0" y="20.5" width="343" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ii-QB-80d">
-                                        <rect key="frame" x="0.0" y="235.5" width="343" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="Qe1-UH-Fej"/>
-                                            <constraint firstAttribute="height" constant="50" id="nLk-jB-lTm"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ii-QB-80d">
+                                        <rect key="frame" x="0.0" y="70.5" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U7f-W6-T6L">
-                                        <rect key="frame" x="0.0" y="285.5" width="343" height="216"/>
+                                        <rect key="frame" x="0.0" y="91" width="343" height="216"/>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ed-fu-eU1">
-                                        <rect key="frame" x="0.0" y="501.5" width="343" height="129.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ceZ-OO-1gb"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="307" width="343" height="324"/>
                                         <state key="normal" title="Check Answer"/>
                                     </button>
                                 </subviews>
@@ -68,10 +61,15 @@
                             <constraint firstItem="GzI-ty-yrC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="vPo-hG-3HY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="PickerView" destination="U7f-W6-T6L" id="B11-5V-1kk"/>
+                        <outlet property="QuestionLabel" destination="nPK-5z-qxr" id="GjU-nE-9mY"/>
+                        <outlet property="QuestionTextView" destination="Ld5-aw-pL4" id="hSr-KL-elT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="124" y="121"/>
         </scene>
     </scenes>
 </document>
